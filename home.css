@@ -1,0 +1,447 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-container button {
+  background-color: transparent;
+  border: none;
+  
+}
+
+#sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 40px;
+}
+
+#sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.1s;
+  font-weight: bold;
+}
+
+#sidepanel a:hover {
+  color: #a8a8a8;
+}
+
+#sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+#search-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-popup {
+  background-color: #eeeeee;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.search-popup input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.search-popup button[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.search-popup .closebtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search-popup .closebtn:hover,
+.search-popup .closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tabs {
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.tablink {
+  background-color: #eeeeee;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 23px;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 10px;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.game-container img {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+.game-card {
+  width: 80px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color:  #eeeeee;
+  margin-right: 15px;
+}
+
+.game-name {
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}
+
+.game-menu {
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+ a.topup{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 10px;
+  font-size: 13px;
+  padding: 0 10px;
+  margin-top: 15px;
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  background-color: #eeeeee;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.logo-game {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-top: -30px;
+}
+
+.game-info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.game-nama {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  color: #fc0000;
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logop {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logop img {
+  width: 40px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+.social-media {
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.social-media img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+.sitemap {
+  margin-top: 30px;
+}
+
+.sitemap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sitemap li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.sitemap a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.container-gerak {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-pay {
+  width: 80px;
+  height: auto;
+  margin: 5px;
+}
+footer {
+  background-color: #eeeeee;
+}
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    
+    /* Gaya konten popup */
+    .popup-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    /* Gaya tombol tutup */
+    .oke-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .logoo img{
+      width: 50px;
+    }
+    .wa{
+    text-decoration: none;
+    background-color: green;
+    padding: 10px ;
+    color: white;
+    border-radius: 10px;
+    }
+    .search-container a{
+      text-decoration: none;
+      color: black;
+      margin-left: 5px;
+    }
+.avatar-dropdown {
+  position: relative;
+}
+
+.avatar-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.avatar-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container img {
+    width: 70px;
+  }
+
+  .game-card {
+    padding: 5px;
+  }
+
+  .game-info {
+    flex-direction: column;
+  }
+
+  .game-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+.tablink {
+  background-color: #eeeeee;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  transition: background-color 0.3s;
+}

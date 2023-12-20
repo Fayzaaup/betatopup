@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<script src="./js/ffmb.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="bg-primary py-2 z-10 fixed w-full top-0">
+			<div class="container">
+				<div class="flex justify-between items-center">
+					<h1 class="font-bold text-text text-2xl">
+						<a href="#">Fayy<span class="text-secondaryYellow">Shop</span></a>
+					</h1>
+					<ul class="text-white flex justify-center gap-2 items-center">
+						<li class="text-sm">
+							<box-icon name="search" color="#ffffff" size="1.5rem"></box-icon>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- End header -->
+
+		<!-- Image Banner -->
+
+		<!-- Image Banner -->
+
+		<section class="lg:flex lg:pt-4 lg:bg-backgroundColor">
+			<section class="Deskripsi mt-12 lg:mt-16">
+				<section class="w-full bg-backgroundColor pb-4">
+					<div class="lg:px-[16px]">
+						<section class="w-full h-[15rem]">
+							<div class="w-full h-[16rem] overflow-hidden">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8DeVCl8uBcG9bZrLUMFLz_cDyj3mWWrSjQ&usqp=CAU" class="w-full h-full object-cover"
+								/>
+							</div>
+						</section>
+						<div class="px-[16px] lg:px-0 pt-8">
+							<h1 class="font-bold text-2xl text-primary" id="game">
+								FC MOBILE
+							</h1>
+							<p
+								class="text-xs max-w-xl text-justify leading-4 opacity-80 py-1"
+							>
+								Fayy shop telah bekerja sama dengan Team untuk menawarkan top
+								up Fc Mobile dengan mudah, aman dan nyaman.
+							</p>
+							<button
+								id="myButton"
+								class="text-xs text-justify leading-4 font-bold underline text-primary lg:hidden"
+							>
+								Baca Lebih lanjut
+							</button>
+							<p
+								id="myParagraph"
+								class="text-xs max-w-xl text-justify leading-4 opacity-80 py-1 hidden lg:block"
+							>
+								FC Mobile adalah permainan video simulasi Sepak bola yang dikembangkan oleh EA Mobile dan EA Kanada dan dipublikasi oleh EA Sports untuk IOS dan Android. Diluncurkan tanggal 11 Oktober 2016 sebagai pengganti game seluler FIFA Mobile, untuk IOS dan Android. Microsoft Windows juga disertakan hingga 2017.
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="lg:mt-16">
+				<section class="w-full bg-backgroundColor py-4 lg:py-0">
+					<div class="container">
+						<div class="relative">
+							<h1
+								class="absolute left-2 font-bold text-text border-2 border-text flex justify-center items-center text-center top-6 bg-secondaryBlue w-[2rem] h-[2rem] rounded-full"
+							>
+								01
+							</h1>
+							<div class="bg-text shadow-sm py-8 rounded-b-md">
+  <form class="flex overflow-hidden px-4 gap-2 justify-center">
+    <input
+      oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+      maxlength="10"
+      type="number"
+      placeholder="Masukan User id"
+      class="text-center font-semibold w-[12rem] py-2 text-xs border border-primary rounded-md"
+      id="userIdInput"
+    />
+    <input
+      oninput="this.text = this.text.replace(/[^0-9]/g, '')"
+      maxlength="15"
+      type="text"
+      placeholder="Nick Name"
+      class="text-center font-semibold w-[6rem] py-2 text-xs border border-primary rounded-md"
+      id="zoneIdInput"
+    />
+  </form>
+  <div class="px-3 pt-4">
+    <p class="text-xs italic text-justify leading-4 opacity-80">
+      Untuk mengetahui User ID Anda, silakan klik menu settings
+      dibagian kanan atas pada menu utama game. Salin ID Kalian lalu tempel. Silakan masukkan User
+      ID Anda untuk menyelesaikan transaksi. Contoh :
+      12345678.
+    </p>
+  </div>
+						</div>
+					</div>
+				</section>
+				<section class="w-full bg-backgroundColor py-4">
+					<div class="container">
+						<div class="relative">
+							<h1
+								class="absolute left-2 font-bold text-text border-2 border-text flex justify-center items-center text-center top-6 bg-secondaryBlue w-[2rem] h-[2rem] rounded-full"
+							>
+								02
+							</h1>
+							<h3
+								class="bg-primary text-text text-center font-semibold py-2 rounded-t-md"
+							>
+								Pilih Nominal Top Up
+							</h3>
+						</div>
+						<div class="bg-text shadow-sm py-8 rounded-b-md">
+							<div class="container w-[19rem] lg:w-full">
+								<div class="grid lg:grid-cols-4 grid-cols-2 gap-4">
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(8390)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(40)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">40 FC Points</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 8.390
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(18741)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(100)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												100 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 18.741
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(81533)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(520)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												520 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 81.533
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(162040)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(1070)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												1070 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 162.040
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(330875)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(2200)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												2200 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 330.875
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(794125)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(5750)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												5750 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 794.125
+											</h3>
+										</div>
+									</div>
+									<div
+										class="w-32 h-40 bg-backgroundColor border-2 border-primary rounded-md mx-auto"
+										id="button"
+										onclick="ubahHarga(1580230)"
+									>
+										<div
+											class="w-full h-full flex justify-center items-center flex-col"
+										id="button" onclick="ubahDiamond(12000)">
+											<img
+												src="https://assets.jajangame.com/2023/11/376e905a1cae1ae29e84dfaa1f72ac9c.png?auto_optimize=medium"
+												alt=""
+												width="50"
+											/>
+											<h2 class="text-center font-bold text-xs">
+												12000 FC Points
+											</h2>
+											<h3
+												class="text-center font-semibold text-secondaryBlue text-xs"
+											>
+												Rp. 1.580.230
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="w-full bg-backgroundColor py-4">
+					<div class="container">
+						<div class="relative">
+							<h1
+								class="absolute left-2 font-bold text-text border-2 border-text flex justify-center items-center text-center top-6 bg-secondaryBlue w-[2rem] h-[2rem] rounded-full"
+							>
+								03
+							</h1>
+							<h3
+								class="bg-primary text-text text-center font-semibold py-2 rounded-t-md"
+							>
+								Konfirmasi Pembelian
+							</h3>
+						</div>
+						<div class="bg-text shadow-sm py-8 rounded-b-md">
+							<form
+								class="flex overflow-hidden px-4 gap-2 justify-between items-center"
+							>
+								<label
+									for="nowa"
+									class="font-bold text-sm text-secondaryDark opacity-80 whitespace-nowrap"
+									>Masukan No wa</label
+								>
+								<input
+									id="nowa"
+									oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+									maxlength="13"
+									type="number"
+									placeholder="Contoh: 0812111111111"
+									class="text-center font-semibold w-[12rem] py-2 text-xs border border-primary rounded-md"
+								/>
+							</form>
+							<div class="flex px-4 justify-between pt-4">
+								<h1
+									class="font-bold text-sm text-secondaryDark opacity-80 whitespace-nowrap"
+								>
+									Total Diamond
+								</h1>
+								<h1
+									class="font-bold text-sm text-secondaryBlue opacity-80 whitespace-nowrap"
+									id="totalDiamond"
+								>
+									0 FC Points
+								</h1>
+							</div>
+							<div class="flex px-4 justify-between pt-4">
+								<h1
+									class="font-bold text-sm text-secondaryDark opacity-80 whitespace-nowrap"
+								>
+									Total Tagihan
+								</h1>
+								<h1
+									class="font-bold text-sm text-secondaryBlue opacity-80 whitespace-nowrap"
+									id="totalHarga"
+								>
+									Rp. 0
+								</h1>
+							</div>
+							<div class="px-3 pt-4">
+								<button
+									 class="bg-secondaryBlue px-32 py-2 rounded-md font-bold text-white hover:bg-primary" onclick="kirimWhatsapp()">    Konfirmasi
+									</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- Accordion Section -->
+		<section class="w-full bg-secondaryBlue pt-4 pb-8">
+			<div class="container">
+				<div class="text-text text-center py-8">
+					<h1 class="text-3xl font-bold text-center text-text">
+						Fayy<span class="text-secondaryYellow">store</span> Indonesia
+					</h1>
+					<h2 class="font-semibold">
+						Fayy Shop Website top-up tercepat dan terpercaya di
+						indonesia
+					</h2>
+					<p class="pt-4 text-center lg:w-3/4 mx-auto lg:text-base">
+						Website top up game ini dibuat untuk mempermudah kalian mencari produk.<br /><br />
+						Kami Menggunakan Layanan Yang Terbaik.<br /><br />
+						Lebih Dari 100 Orang Mengunjungi Toko Kami Dan Semuanya Merasa Senang Karena Telah Berbelanja Di Toko Kami.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- End Section About Mizustore -->
+
+		<!-- Accordion Section -->
+		<section class="w-full bg-backgroundColor pt-4 pb-8">
+			<div class="container">
+				<div>
+					<div class="py-4">
+						<h1 class="text-center font-bold lg:text-2xl">
+							Pertanyaan yang sering ditanyakan
+						</h1>
+					</div>
+					<div class="max-w-2xl mx-auto">
+						<div class="bg-white rounded-md border-2">
+							<div class="accordion-header flex items-center justify-between">
+								<span class="font-semibold text-lg">Tau gak?</span>
+								<i class="bx bx-chevron-down text-3xl"></i>
+							</div>
+							<div class="accordion-body">
+								<div class="p-4 border-t">
+									<p>Gak Tau</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion 2 -->
+					<div class="max-w-2xl mx-auto mt-2">
+						<div class="bg-white rounded-md border-2">
+							<div class="accordion-header flex items-center justify-between">
+								<span class="font-semibold text-lg"
+									>Apakah Fayy Shop Amanah?</span
+								>
+								<i class="bx bx-chevron-down text-3xl"></i>
+							</div>
+							<div class="accordion-body">
+								<div class="p-4 border-t">
+									<p>Fayy Shop sudah terbukti 99% amanah. lebih dari 100 orang merasa senang karena telah top up di toko Fayy Shop. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Accordion 3 -->
+					<div class="max-w-2xl mx-auto mt-2">
+						<div class="bg-white rounded-md border-2">
+							<div class="accordion-header flex items-center justify-between">
+								<span class="font-semibold text-lg"
+									>Apakah Fayy Shop Aman?</span
+								>
+								<i class="bx bx-chevron-down text-3xl"></i>
+							</div>
+							<div class="accordion-body">
+								<div class="p-4 border-t">
+									<p>Pastinya aman dong kak, karena admin disini sangat memperhatikan produk & layanan di Toko Fayy Shop.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Accordion -->
+
+		<!-- Contact Us  -->
+
+		<section class="w-full bg-secondaryYellow pt-4 pb-8">
+			<div class="container">
+				<div>
+					<div class="">
+						<h1 class="mb-1 font-semibold text-base text-left text-primary">
+							Butuh Bantuan?
+						</h1>
+						<a
+							href="https://wa.me/6281295169487"
+							class="py-2 px-4 bg-secondaryGray bg-opacity-80 rounded-md text-xs text-left"
+						>
+							<i class="bx bx-message-dots"></i>
+							<label for="">Hubungi Kami</label>
+						</a>
+					</div>
+					<div class="my-4">
+						<h1 class="mb-1 font-semibold text-base text-left text-primary">
+							About Us
+						</h1>
+						<a
+							href="#"
+							class="py-2 px-4 bg-secondaryGray bg-opacity-80 rounded-md text-xs text-left"
+						>
+							<i class="bx bx-message-dots"></i>
+							<label for="">Hubungi Kami</label>
+						</a>
+					</div>
+					<div class="mt-4">
+						<h1 class="mb-1 font-semibold text-base text-left text-primary">
+							Dapatkan berita Fayy di :
+						</h1>
+						<div class="flex gap-2">
+							<i class="bx bxl-whatsapp"></i>
+							<i class="bx bxl-facebook"></i>
+							<i class="bx bxl-instagram-alt"></i>
+							<i class="bx bxl-telegram"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Us -->
+
+		<!-- Section -->
+		<footer class="bg-backgroundColor w-full pt-4 pb-8 lg:pb-2">
+			<div class="container">
+				<div class="lg:flex justify-start gap-8">
+					<a href="#" class="text-primary flex justify-center text-xs pb-2"
+						>&#169; Hak Cipta Fayy Shop
+					</a>
+					<ul
+						class="list-disc text-primary text-xs flex gap-4 justify-center flex-wrap"
+					>
+						<li><a href="#">Pemasaran dan Kemitraan</a></li>
+						<li><a href="#">Untuk Penerbit Game</a></li>
+					</ul>
+					<ul
+						class="list-disc text-primary text-xs flex gap-4 justify-center flex-wrap"
+					>
+						<li><a href="#">Syarat & Ketentuan</a></li>
+						<li><a href="#">Kebijakan Privasi</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="./js/fcmobile.js"></script>
+		<script></script>
+	</body>
+</html>

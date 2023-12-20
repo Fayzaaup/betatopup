@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo/logo.png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<nav>
+  <div id="navbar">
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <div class="logo">
+      <img src="logo/logo.png" alt="Logo Perusahaan">
+    </div>
+    <div class="search-container">
+      <button type="button" onclick="openSearch()"><i class="fas fa-search"></i></button>
+      <div class="navbar-right">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a>
+  <a href="#"><i class="fas fa-cog"></i> User Setting</a>
+  <a href="#"><i class="fas fa-wallet"></i> Balance</a>
+  <a href="#"><i class="fas fa-exchange-alt"></i> Transaction</a>
+  <a href="inputdata.html"><i class="fas fa-cogs"></i> Product Setting</a>
+  <a href="#"><i class="fas fa-bullhorn"></i> Promo</a>
+  <a href="index.html"><i class="fas fa-chart-line"></i> Reports & Analysis</a>
+  <a href="#"><i class="fas fa-bell"></i> Notification</a>
+  <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+  <a href="#"><i class="fas fa-cog"></i> Arrangement</a>
+  <a href="#"><i class="fas fa-cogs"></i> Product Setting</a>
+  <a href="#"><i class="fas fa-bullhorn"></i> Promo</a>
+</div>
+
+<div id="search-overlay" class="overlay">
+  <div class="search-popup">
+    <span class="closebtn" onclick="closeSearch()">&times;</span>
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </div>
+</div>
+
+<div class="header">
+  <h1>Dashboard</h1>
+</div>
+
+<div class="container">
+  <div class="dashboard">
+    <div class="card">
+      <div class="card-title">Total Order</div>
+      <div class="card-value">100</div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="Keuntungan">Keuntungan</div>
+      <div class="card-value">$10,000</div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="Rugi">Rugi</div>
+      <div class="card-value">$2,000</div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="Sukses">Pembelian Sukses</div>
+      <div class="card-value">50</div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="pending">Pembelian Pending</div>
+      <div class="card-value">20</div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="gagal">Pembelian Gagal</div>
+      <div class="card-value">10</div>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NickName</th>
+          <th>Layanan</th>
+          <th>Nominal</th>
+          <th>Harga</th>
+          <th>NoWA</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr>
+    <td data-id="1">23425745 (2546)</td>
+    <td>Yanzzz</td>
+    <td>Mobile Legends</td>
+    <td>14 (13+1)</td>
+    <td>Rp.4,877</td>
+    <td>082285152993</td>
+    <td>Sukses</td>
+    <td><i class="fas fa-trash delete-icon"></i></td> <!-- Tambahkan ikon tongsampah dengan class delete-icon -->
+  </tr>
+</tbody>
+
+    </table>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

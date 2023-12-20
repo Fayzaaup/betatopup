@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="icon" href="logo/logo.png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>FAYY SHOP</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...contoh sha512..." crossorigin="anonymous" />
+</head>
+<body>
+  
+  <div id="navbar">
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <div class="logo">
+      <img src="logo/logoatas.png" alt="Logo Perusahaan">
+    </div>
+    <div class="search-container">
+      <button type="button" onclick="openSearch()"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+<div id="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="Event & News"><i class="fas fa-newspaper"></i> Event & News</a>
+    <a href="#"><i class="fas fa-list"></i> Price List</a>
+    <a href="sitemap/Tentang.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#"><i class="fas fa-quote-left"></i> TESTIMONI</a>
+    <a href="https://wa.me/6281295169487"><i class="fas fa-phone"></i> Contact Us</a>
+</div>
+
+
+  <div id="search-overlay" class="overlay">
+    <div class="search-popup">
+      <span class="closebtn" onclick="closeSearch()">&times;</span>
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+
+    <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="https://w0.peakpx.com/wallpaper/455/720/HD-wallpaper-brody-stun-skin-mobile-legends-mobile-legends.jpg" alt="Gambar 1" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://w0.peakpx.com/wallpaper/426/55/HD-wallpaper-pubg-mobile-christmas.jpg" alt="Gambar 2" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="https://w0.peakpx.com/wallpaper/449/481/HD-wallpaper-call-of-duty-mobile-2019-call-of-duty-mobile-games-2019-games-mobile-call-of-duty.jpg" alt="Gambar 3" style="width:100%">
+  </div>
+    <div class="mySlides">
+      <img src="https://w0.peakpx.com/wallpaper/238/809/HD-wallpaper-video-game-genshin-impact-mona-genshin-impact.jpg" alt="Gambar 3" style="width:100%">
+  </div>
+    <div class="mySlides">
+      <img src="https://w0.peakpx.com/wallpaper/913/217/HD-wallpaper-valorant-ultra-games-other-games-videogame-valorant.jpg" alt="Gambar 3" style="width:100%">
+  </div>
+<div class="tabs" translate="no">
+  <button class="tablink active" onclick="openTab(event, 'games')" translate="no"><i class="fas fa-gamepad"></i> Games</button>
+  <button class="tablink" onclick="openTab(event, 'Event & News')" translate="no"><i class="fas fa-newspaper"></i> Event & News</button>
+  <button class="tablink" onclick="openTab(event, 'Via Login')" translate="no"><i class="fas fa-user-lock"></i> Via Login</button>
+</div>
+<div id="games" class="tabcontent active">
+    <div class="game-container">
+      <div class="game-card">
+        <img src="img/ml.jpg" alt="Mobile Legends">
+        <div class="game-name"translate="no">MOBILE LEGENDS</div>
+        <a href="public/mobile-legend.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/11/9f57530ca154d9e7ddfc56e0aef684e3.png?auto_optimize=medium" alt="Free Fire">
+        <div class="game-name"translate="no">GARENA<br>FREE FIRE</div>
+        <a href="public/freefiremobile.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/gi.jpg" alt="Genshin Impact ">
+        <div class="game-name"translate="no">GENSHIN IMPACT</div>
+        <a href="public/genshin.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/pubgm.jpg" alt="Pubgm">
+        <div class="game-name">PUBGM</div>
+        <a href="public/pubgm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/valorant.jpg" alt="Valorant">
+        <div class="game-name">VALORANT</div>
+        <a href="public/valoran.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/codm.jpg" alt="Call Of Duty">
+        <div class="game-name"translate="no">CODM</div>
+        <a href="public/codm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/hsr.jpg" alt="Honkai Star Rail">
+        <div class="game-name"translate="no">HONKAI STAR RAIL</div>
+        <a href="public/honkai.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/09/5b426e68a7e8f755107fa0acdd661475.png?auto_optimize=medium" alt="FC MOBILE">
+        <div class="game-name"translate="no">EA SPORTS FC MOBILE</div>
+        <a href="public/fcmobile.html"class="topup"translate="no">TOP UP</a>
+      </div>
+     <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/10/c42c9be9efd67a493f9ca48da2f3d918.png?auto_optimize=medium" alt="Garena Undawn">
+        <div class="game-name"translate="no">GARENA<br>UNDAWN</div>
+        <a href="public/undawn.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2022/12/3f4a5205c72b196d46681684e38c5a78.png?auto_optimize=medium" alt="Honkai Impact 3">
+        <div class="game-name"translate="no">Point blank Zepetto</div>
+        <a href="public/pb.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/12/04435a8582e227c2aad736901642a0ff.png?auto_optimize=medium" alt="Goddes Of Victory Nikke">
+        <div class="game-name"translate="no">8 BALL<br>POOL</div>
+        <a href="public/8ball.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/02/397be89a955d0c52989c4fc653280484.png?auto_optimize=medium" alt="Super sus">
+        <div class="game-name"translate="no">SUPER<br>SUS</div>
+        <a href="public/supersus.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2023/09/b3f4aebd4cb2eefc98f0b6c95e0e4246.png?auto_optimize=medium" alt="Ragnarok Origin">
+        <div class="game-name"translate="no">eggy<br>party</div>
+        <a href="public/eggyparty.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/rm.jpg" alt="REVELATION M:INFINITE JOURNEY">
+        <div class="game-name"translate="no">Revelation Infinite</div>
+        <a href="public/revelation.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.jajangame.com/2022/11/2e3ea5fef0edf6d59cd060789a99f56d.png?auto_optimize=medium" alt="League Of Leagens Wild Rif">
+        <div class="game-name"translate="no">LOL :<br>WILD RIFT</div>
+        <a href="public/lolwr.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/ac.jpg" alt="Ace Racer">
+        <div class="game-name"translate="no">ACE<br></vr>RACER</div>
+        <a href="public/ac.html"class="topup"translate="no">TOP UP</a>
+    </div>
+      <div class="game-card">
+        <img src="img/aov.jpg" alt="Arena Of Valor">
+        <div class="game-name"translate="no">ARENA OF VALOR</div>
+        <a href="public/aov.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/sm.jpg" alt="Saudagar Man">
+        <div class="game-name"translate="no">SAUSAGE<br>MAN</div>
+        <a href="public/sausage.html"class="topup"translate="no">TOP UP</a>
+      </div>
+  </div>
+  </div>
+    </div>
+<div id="Via Login" class="tabcontent">
+    <div class="game-container">
+      <div class="game-card">
+        <img src="https://play-lh.googleusercontent.com/t2WpKN52twk889ff51neESCXR0xMOnM8jap_LQ3hmzavKR6Xz8IzWZr07DD-Wv7kQF0" alt="Arknight">
+        <div class="game-name"translate="no">THE SPIKE</div>
+        <a href="public/thespike.html"class="topup"translate="no">TOP UP</a>
+      </div>
+</div>
+  </div>
+<div id="Event & News" class="tabcontent">
+        <div class="container">
+            <img src="logo/f.png" alt="Logo Game" class="logo-game">
+            <div class="game-info">
+                <img src="event/stok3.jpg" alt="Game Image" class="game-image">
+                <div class="game-details">
+                <p class="event-description"><h3>SPESIFIKASI</h3><br>- FULL RANK S/S+<br>- WC POINT MAX<br>- STORY STAR MAX<br>- BALL 60K+<br>- COIN 400JT<br><br>Mau Liat Spek lengkapnya? klik button dibawah.
+                </p>
+                    <a href="https://wa.me/6281295169487" class="buy-button" class="topup" translate="no">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+  
+    <div id="About"class="logop">
+        <img src="logo/logo.png" alt="Logo Perusahaan">
+        <h4>Fayy SHOP</h4>
+    </div>
+
+    <div class="content">
+        <p>Nikmati Pengalaman PemTOP UPan<br> Voucher dan Top Up Game<br> Otomatis dan Murah <br>Kapan pun dan di mana pun kamu mau</p>
+
+        <div class="social-media">
+          <p>IKUT KAMI</p>
+            <a href="https://instagram.com/7superstarstore"><img src="sosialmedia/ig.jpg" alt="Instagram"></a>
+            <a href="https://wa.me/6281295169487"><img src="sosialmedia/wa.jpg" alt="WhatsApp"></a>
+            <a href="https://youtube.com/@FayzaFX?si=msmwdXkg8sTAlF-U"><img src="sosialmedia/yt.jpg" alt="YouTube"></a>
+        </div>
+
+        <div class="sitemap">
+            <ul>
+                <li><a href="sitemap/Tentang.html">Tentang</a></li>
+                <li><a href="sitemap/Kebijakan Privasi.html">Kebijakan Privasi</a></li>
+                <li><a href="sitemap/FAQ.html">FAQ</a></li>
+                <li><a href="sitemap/Ketentuan Layanan.html">Ketentuan Layanan</a></li>
+            </ul>
+        </div>
+<div class="container-gerak">
+  <h4>PEMBAYARAN</h4>
+</div>
+<div class="container-gerak">
+  <img class="image-pay" src="pay/dana.jpg" alt="Image 1">
+  <img class="image-pay" src="pay/gopay.jpg" alt="Image 2">
+  <img class="image-pay" src="pay/ovo.jpg" alt="Image 3">
+  </div>
+  <div>
+  <img class="image-pay" src="pay/sp.jpg" alt="Image 4">
+  <img class="image-pay" src="pay/indo.jpg" alt="Image 5">
+  <img class="image-pay" src="pay/alfa.jpg" alt="Image 6">
+  </div>
+  <div>
+  <img class="image-pay" src="pay/bi.jpg" alt="Image 7">
+</div>
+<footer>
+        <div class="copyright">
+            <p>copyright&copy; 2023 Fayyshop. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<div id="overlay" class="overlay">
+    <div class="popup-content">
+    <div class="logoo">
+      <img src="logo/logo.png" alt="Logo Perusahaan">
+    </div>
+    <h2>Selamat datang di Toko kami!</h2>
+<h5>Pengumuman Penting</h5>
+    <p>Harap diperhatikan bahwa Toko Saya Belum mendukung pengisian otomatis dan pembayaran otomatis.</p>
+    <p>Semua proses pengisian dan pembayaran harus dilakukan secara manual melalui whatsapp</p>
+    <p>Jika Anda mengalami masalah atau membutuhkan bantuan, silakan hubungi layanan pelanggan kami.</p>
+    <p>PENGISIAN OTOMATIS DAN PEMBAYARAN OTOMATIS MASIH DALAM TAHAP PENGEMBANGAN</p>
+<a href="https://wa.me/6281295169487" class="wa" target="_blank">WhatsApp</a>
+    <h5>SEKIAN TERIMA KASIH</h5>
+    <h5>Hormat Saya FayyShop</h5>
+<button class="oke-button" onclick="closePopup()">Oke</button>
+    </div>
+  </div>
+  <script src="home.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

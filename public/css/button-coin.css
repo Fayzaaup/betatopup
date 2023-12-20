@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button.kotak {
+    border: none;
+    background-color: #e0e0e0;
+    font-family: 'helvetica', sans-serif;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button.kotak img {
+    max-width: 25%;
+    border-radius: 8px;
+}
+
+button.kotak p {
+    margin-top: 10px;
+    font-weight: bold;
+}
